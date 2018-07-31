@@ -2,6 +2,8 @@
 
 - [关于dockerfile建立镜像异常](https://bbs.csdn.net/topics/391040030)
 
+- [Dockerfile 中的 CMD 与 ENTRYPOINT](http://www.cnblogs.com/sparkdev/p/8461576.html)
+
 
 ## 构建镜像
 
@@ -51,6 +53,11 @@
     cat Dockerfile | docker build -
   ```
 
+- 从标准输入中读取上下文压缩包进行构建
+
+  ```shell
+    docker build - < context.tar.gz
+  ```
 
 - https://yeasy.gitbooks.io/docker_practice/content/image/build.html
   
